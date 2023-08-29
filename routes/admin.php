@@ -20,7 +20,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::group(['prefix' => 'admin'], function () {
 
         Route::get('/', function () {
-            return view('welcome');
+            return view('layouts.master');
         });
 
         Route::get('test', function () {
