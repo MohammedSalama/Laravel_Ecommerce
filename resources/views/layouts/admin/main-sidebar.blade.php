@@ -7,17 +7,18 @@
                     <!-- menu item Dashboard-->
                     <li>
                         <a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard">
-                            <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">{{ __('E-Commerce') }}</span>
+                            <div class="pull-left"><i class="ti-home"></i><span
+                                    class="right-nav-text">{{ __('E-Commerce') }}</span>
                             </div>
                             <div class="pull-right"><i class="ti-plus"></i></div>
                             <div class="clearfix"></div>
                         </a>
                         <ul id="dashboard" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="index.html">Dashboard 01</a> </li>
-                            <li> <a href="index-02.html">Dashboard 02</a> </li>
-                            <li> <a href="index-03.html">Dashboard 03</a> </li>
-                            <li> <a href="index-04.html">Dashboard 04</a> </li>
-                            <li> <a href="index-05.html">Dashboard 05</a> </li>
+                            <li><a href="index.html">Dashboard 01</a></li>
+                            <li><a href="index-02.html">Dashboard 02</a></li>
+                            <li><a href="index-03.html">Dashboard 03</a></li>
+                            <li><a href="index-04.html">Dashboard 04</a></li>
+                            <li><a href="index-05.html">Dashboard 05</a></li>
                         </ul>
                     </li>
                     <!--facultie -->
@@ -31,8 +32,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="elements" class="collapse" data-parent="#sidebarnav">
-{{--                            <li><a href="{{ route('categorie.index') }}">Categorie</a></li>--}}
-{{--                            <li><a href="{{ route('categorie.create') }}">Create Categorie</a></li>--}}
+                            {{--                            <li><a href="{{ route('categorie.index') }}">Categorie</a></li>--}}
+                            {{--                            <li><a href="{{ route('categorie.create') }}">Create Categorie</a></li>--}}
 
                         </ul>
                     </li>
@@ -45,8 +46,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="costomer" class="collapse" data-parent="#sidebarnav">
-{{--                            <li><a href="{{ route('costomer.index') }}">Show Costomer</a></li>--}}
-{{--                            <li><a href="{{ route('costomer.create') }}">Create Costomer</a></li>--}}
+                            {{--                            <li><a href="{{ route('costomer.index') }}">Show Costomer</a></li>--}}
+                            {{--                            <li><a href="{{ route('costomer.create') }}">Create Costomer</a></li>--}}
 
                         </ul>
                     </li>
@@ -60,8 +61,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="product" class="collapse" data-parent="#sidebarnav">
-{{--                            <li><a href="{{ route('product.index') }}">Products</a></li>--}}
-{{--                            <li><a href="{{ route('product.create') }}">Create Product</a></li>--}}
+                            {{--                            <li><a href="{{ route('product.index') }}">Products</a></li>--}}
+                            {{--                            <li><a href="{{ route('product.create') }}">Create Product</a></li>--}}
 
                         </ul>
                     </li>
@@ -75,8 +76,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="order" class="collapse" data-parent="#sidebarnav">
-{{--                            <li><a href="{{ route('orders.index') }}">orders</a></li>--}}
-{{--                            <li><a href="{{ route('orders.create') }}">Create orders</a></li>--}}
+                            {{--                            <li><a href="{{ route('orders.index') }}">orders</a></li>--}}
+                            {{--                            <li><a href="{{ route('orders.create') }}">Create orders</a></li>--}}
 
                         </ul>
                     </li>
@@ -89,8 +90,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="address" class="collapse" data-parent="#sidebarnav">
-{{--                            <li><a href="{{ route('countries.index') }}">countries</a></li>--}}
-{{--                            <li><a href="{{ route('countries.create') }}">Create countries</a></li>--}}
+                            {{--                            <li><a href="{{ route('countries.index') }}">countries</a></li>--}}
+                            {{--                            <li><a href="{{ route('countries.create') }}">Create countries</a></li>--}}
 
                         </ul>
                     </li>
@@ -102,8 +103,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="state" class="collapse" data-parent="#sidebarnav">
-{{--                            <li><a href="{{ route('states.index') }}">states</a></li>--}}
-{{--                            <li><a href="{{ route('states.create') }}">Create states</a></li>--}}
+                            {{--                            <li><a href="{{ route('states.index') }}">states</a></li>--}}
+                            {{--                            <li><a href="{{ route('states.create') }}">Create states</a></li>--}}
 
                         </ul>
                     </li>
@@ -115,8 +116,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="cities" class="collapse" data-parent="#sidebarnav">
-{{--                            <li><a href="{{ route('cities.index') }}">cities</a></li>--}}
-{{--                            <li><a href="{{ route('cities.create') }}">Create cities</a></li>--}}
+                            {{--                            <li><a href="{{ route('cities.index') }}">cities</a></li>--}}
+                            {{--                            <li><a href="{{ route('cities.create') }}">Create cities</a></li>--}}
 
                         </ul>
                     </li>

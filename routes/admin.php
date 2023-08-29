@@ -1,5 +1,6 @@
 <?php
 
+use Ecommerce\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -16,18 +17,10 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
-    /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
-    Route::group(['prefix' => 'admin'], function () {
+    Route::group(['prefix' => 'admin','middleware' => ['auth', 'verified']], function () {
 
-        Route::get('/', function () {
-            return view('layouts.master');
-        });
+       Route::resource('/',DashboardController::class)->name('index','dashboard');
 
-        Route::get('test', function () {
-            return view('test');
-        });
-
-        // يمكنك إضافة المزيد من المسارات المحلية هنا
     });
 });
 

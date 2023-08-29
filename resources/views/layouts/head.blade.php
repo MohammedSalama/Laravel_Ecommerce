@@ -2,7 +2,7 @@
 <title>{{ config('app.name', 'title') }}</title>
 
 <!-- Favicon -->
-<link rel="shortcut icon" href="{{ URL::asset('assets/images/ECommerce.png') }}" type="image/x-icon" />
+<link rel="shortcut icon" href="{{ URL::asset('assets/images/ECommerce.png') }}" type="image/x-icon"/>
 <!-- Font -->
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900">
@@ -13,7 +13,6 @@
 <link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
 <link href="{{ URL::asset('assets/css/all.min.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="{{ URL::asset('temp/summernote/summernote-bs4.min.css') }}">
-
 
 
 @livewireStyles

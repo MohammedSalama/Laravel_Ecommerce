@@ -1,5 +1,6 @@
 <?php
 
+use Ecommerce\Home\HomeController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -15,18 +16,8 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 */
 
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
-    /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
     Route::group(['prefix' => 'dashboard'], function () {
-
-        Route::get('/', function () {
-            return view('welcome');
-        });
-
-        Route::get('test', function () {
-            return view('test');
-        });
-
-        // يمكنك إضافة المزيد من المسارات المحلية هنا
+    Route::resource('/',HomeController::class)->name('index','home');
     });
 });
 
