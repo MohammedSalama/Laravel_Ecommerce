@@ -48,7 +48,7 @@
                         </div>
                         <div class="float-right text-right">
                             <p class="card-text text-dark">categories</p>
-                            <h4><span>Count = </span>{{ $categories }}</h4>
+                            {{--                            <h4><span>Count = </span>{{ $categories }}</h4>--}}
                         </div>
                     </div>
                     <p class="text-muted pt-3 mb-0 mt-2 border-top">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="float-right text-right">
                             <p class="card-text text-dark">products</p>
-                            <h4><span>Count = </span>{{ $products }}</h4>
+                            {{--                            <h4><span>Count = </span>{{ $products }}</h4>--}}
                         </div>
                     </div>
                     <p class="text-muted pt-3 mb-0 mt-2 border-top">
@@ -91,7 +91,7 @@
                         </div>
                         <div class="float-right text-right">
                             <p class="card-text text-dark">Orders</p>
-                            <h4>{{ $orders }}</h4>
+                            {{--                            <h4>{{ $orders }}</h4>--}}
                         </div>
                     </div>
                     <p class="text-muted pt-3 mb-0 mt-2 border-top">
@@ -273,7 +273,7 @@
                                  aria-labelledby="months-tab">
                                 <div class="row mb-30">
                                     <div class="col-md-2 col-sm-6">
-                                        <img class="img-fluid" src="images/blog/05.jpg" alt="">
+                                        <img class="img-fluid" src="{{ asset('assets/images/blog/05.jpg') }}" alt="">
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <h6 class="mb-0 sm-mt-5">Supercharge your motivation</h6>
@@ -292,7 +292,7 @@
                                 </div>
                                 <div class="row mb-30">
                                     <div class="col-md-2 col-sm-6">
-                                        <img class="img-fluid" src="images/blog/02.jpg" alt="">
+                                        <img class="img-fluid" src="{{ asset('assets/images/blog/02.jpg') }}" alt="">
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <h6 class="mb-0 sm-mt-5">Helen keller a teller seller</h6>
@@ -312,7 +312,7 @@
                                 </div>
                                 <div class="row mb-30">
                                     <div class="col-md-2 col-sm-6">
-                                        <img class="img-fluid" src="images/blog/03.jpg" alt="">
+                                        <img class="img-fluid" src="{{ asset('assets/images/blog/03.jpg') }}" alt="">
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <h6 class="mb-0 sm-mt-5">The other virtues practice</h6>
@@ -332,7 +332,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-2 col-sm-6">
-                                        <img class="img-fluid" src="images/blog/04.jpg" alt="">
+                                        <img class="img-fluid" src="{{ asset('assets/images/blog/04.jpg') }}" alt="">
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <h6 class="mb-0 sm-mt-5">You will begin to realise</h6>
@@ -354,7 +354,7 @@
                             <div class="tab-pane fade" id="year" role="tabpanel" aria-labelledby="year-tab">
                                 <div class="row mb-30">
                                     <div class="col-md-2 col-sm-6">
-                                        <img class="img-fluid" src="images/blog/09.jpg" alt="">
+                                        <img class="img-fluid" src="{{ asset('assets/images/blog/09.jpg') }}" alt="">
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <h6 class="mb-0 sm-mt-5">Walk out 10 years into</h6>
@@ -374,7 +374,7 @@
                                 </div>
                                 <div class="row mb-30">
                                     <div class="col-md-2 col-sm-6">
-                                        <img class="img-fluid" src="images/blog/06.jpg" alt="">
+                                        <img class="img-fluid" src="{{ asset('assets/images/blog/06.jpg') }}" alt="">
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <h6 class="mb-0 sm-mt-5">Step out on to the path</h6>
@@ -394,7 +394,7 @@
                                 </div>
                                 <div class="row mb-30">
                                     <div class="col-md-2 col-sm-6">
-                                        <img class="img-fluid" src="images/blog/07.jpg" alt="">
+                                        <img class="img-fluid" src="{{ asset('assets/images/blog/07.jpg') }}" alt="">
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <h6 class="mb-0 sm-mt-5">Briefly imagine that you</h6>
@@ -414,7 +414,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-2 col-sm-6">
-                                        <img class="img-fluid" src="images/blog/08.jpg" alt="">
+                                        <img class="img-fluid" src="{{ asset('assets/images/blog/08.jpg') }}" alt="">
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <h6 class="mb-0 sm-mt-5">You continue doing what</h6>
@@ -448,11 +448,12 @@
                         <li class="mb-20">
                             <div class="media">
                                 <div class="position-relative">
-                                    <img class="img-fluid mr-15 avatar-small" src="images/item/01.png" alt="">
+                                    <img class="img-fluid mr-15 avatar-small"
+                                         src="{{ asset('assets/images/item/01.png') }}" alt="">
                                 </div>
                                 <div class="media-body">
                                     <h6 class="mt-0 mb-0">Car dealer <span class="float-right text-danger">
-                                                    8,561</span> </h6>
+                                                    8,561</span></h6>
                                     <p>Automotive WordPress Theme </p>
                                 </div>
                             </div>
@@ -461,11 +462,12 @@
                         <li class="mb-20">
                             <div class="media">
                                 <div class="position-relative clearfix">
-                                    <img class="img-fluid mr-15 avatar-small" src="images/item/02.png" alt="">
+                                    <img class="img-fluid mr-15 avatar-small"
+                                         src="{{ asset('assets/images/item/02.png') }}" alt="">
                                 </div>
                                 <div class="media-body">
                                     <h6 class="mt-0 mb-0">Webster <span class="float-right text-warning">
-                                                    6,213</span> </h6>
+                                                    6,213</span></h6>
                                     <p>Multi-purpose HTML5 Template </p>
                                 </div>
                             </div>
@@ -474,11 +476,12 @@
                         <li class="mb-20">
                             <div class="media">
                                 <div class="position-relative">
-                                    <img class="img-fluid mr-15 avatar-small" src="images/item/03.png" alt="">
+                                    <img class="img-fluid mr-15 avatar-small"
+                                         src="{{ asset('assets/images/item/03.png') }}" alt="">
                                 </div>
                                 <div class="media-body">
                                     <h6 class="mt-0 mb-0">The corps <span class="float-right text-success">
-                                                    2,926</span> </h6>
+                                                    2,926</span></h6>
                                     <p> Multi-Purpose WordPress Theme </p>
                                 </div>
                             </div>
@@ -487,7 +490,8 @@
                         <li>
                             <div class="media">
                                 <div class="position-relative clearfix">
-                                    <img class="img-fluid mr-15 avatar-small" src="images/item/04.png" alt="">
+                                    <img class="img-fluid mr-15 avatar-small"
+                                         src="{{ asset('assets/images/item/04.png') }}" alt="">
                                 </div>
                                 <div class="media-body">
                                     <h6 class="mt-0 mb-0">Sam martin <span
@@ -529,7 +533,7 @@
         </div>
         <div class="col-xl-4 mb-30">
             <div class="card card-statistics h-100">
-                <div class="p-4 text-center bg" style="background: url(images/bg/01.jpg);">
+                <div class="p-4 text-center bg" style="background: url('{{ asset('assets/images/bg/01.jpg') }}');">
                     <h5 class="mb-70 text-white position-relative">Michael Bean </h5>
                     <div class="btn-group info-drop">
                         <button type="button" class="dropdown-toggle-split text-white" data-toggle="dropdown"
@@ -548,7 +552,8 @@
                 </div>
                 <div class="card-body text-center position-relative">
                     <div class="avatar-top">
-                        <img class="img-fluid w-25 rounded-circle " src="images/team/13.jpg" alt="">
+                        <img class="img-fluid w-25 rounded-circle " src="{{ asset('assets/images/team/13.jpg') }}"
+                             alt="">
                     </div>
                     <div class="row">
                         <div class="col-sm-4 mt-30">
@@ -628,9 +633,11 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-success save-event">Create
-                                    event</button>
+                                    event
+                                </button>
                                 <button type="button" class="btn btn-danger delete-event"
-                                        data-dismiss="modal">Delete</button>
+                                        data-dismiss="modal">Delete
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -642,7 +649,8 @@
                             <div class="modal-header">
                                 <h5 class="modal-title">Add a category</h5>
                                 <button type="button" class="close" data-dismiss="modal"
-                                        aria-hidden="true">&times;</button>
+                                        aria-hidden="true">&times;
+                                </button>
                             </div>
                             <div class="modal-body p-20">
                                 <form>
@@ -650,7 +658,7 @@
                                         <div class="col-md-6">
                                             <label class="control-label">Category Name</label>
                                             <input class="form-control form-white" placeholder="Enter name"
-                                                   type="text" name="category-name" />
+                                                   type="text" name="category-name"/>
                                         </div>
                                         <div class="col-md-6">
                                             <label class="control-label">Choose Category Color</label>
@@ -669,7 +677,8 @@
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-success save-category"
-                                        data-dismiss="modal">Save</button>
+                                        data-dismiss="modal">Save
+                                </button>
                             </div>
                         </div>
                     </div>

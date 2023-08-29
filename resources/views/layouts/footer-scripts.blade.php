@@ -6,7 +6,6 @@
 <script type="text/javascript">var plugin_path = '{{ asset('assets/js') }}/';</script>
 
 
-
 @livewireScripts
 @stack('scripts')
 
@@ -38,9 +37,9 @@
 
 @livewireScripts
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#datatable').DataTable();
-    } );
+    });
 </script>
 
 
@@ -89,15 +88,12 @@
 
                     },
                 });
-            }
-
-            else {
+            } else {
                 console.log('AJAX load did not work');
             }
         });
     });
 </script>
-
 
 
 <script>
@@ -117,9 +113,7 @@
 
                     },
                 });
-            }
-
-            else {
+            } else {
                 console.log('AJAX load did not work');
             }
         });
@@ -144,9 +138,7 @@
 
                     },
                 });
-            }
-
-            else {
+            } else {
                 console.log('AJAX load did not work');
             }
         });
@@ -171,9 +163,7 @@
 
                     },
                 });
-            }
-
-            else {
+            } else {
                 console.log('AJAX load did not work');
             }
         });

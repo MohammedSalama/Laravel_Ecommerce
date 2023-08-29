@@ -38,10 +38,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
     {
         return view('welcome');
     });
-
-    Route::get('test',function(){
-        return View::make('test');
-    });
 });
 
 /** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
