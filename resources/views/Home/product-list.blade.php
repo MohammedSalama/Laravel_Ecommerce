@@ -111,7 +111,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-2.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-2.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -139,7 +139,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-3.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-3.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -167,7 +167,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-4.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-4.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -195,7 +195,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-5.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-5.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -223,7 +223,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-6.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-6.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -251,7 +251,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-7.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-7.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -279,7 +279,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-8.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-8.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -307,7 +307,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-9.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-9.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -405,7 +405,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-9.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-9.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -431,7 +431,7 @@
                                 </div>
                                 <div class="product-image">
                                     <a href="product-detail.html">
-                                        <img src="/temp/img/product-8.jpg" alt="Product Image">
+                                        <img src="{{ asset('temp/img/product-8.jpg') }}" alt="Product Image">
                                     </a>
                                     <div class="product-action">
                                         <a href="#"><i class="fa fa-cart-plus"></i></a>
@@ -485,12 +485,12 @@
     <div class="brand">
         <div class="container-fluid">
             <div class="brand-slider">
-                <div class="brand-item"><img src="img/brand-1.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-2.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-3.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-4.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-5.png" alt=""></div>
-                <div class="brand-item"><img src="img/brand-6.png" alt=""></div>
+                <div class="brand-item"><img src="{{ asset('temp/img/brand-1.png') }}" alt=""></div>
+                <div class="brand-item"><img src="{{ asset('temp/img/brand-2.png') }}" alt=""></div>
+                <div class="brand-item"><img src="{{ asset('temp/img/brand-3.png') }}" alt=""></div>
+                <div class="brand-item"><img src="{{ asset('temp/img/brand-4.png') }}" alt=""></div>
+                <div class="brand-item"><img src="{{ asset('temp/img/brand-5.png') }}" alt=""></div>
+                <div class="brand-item"><img src="{{ asset('temp/img/brand-6.png') }}" alt=""></div>
             </div>
         </div>
     </div>

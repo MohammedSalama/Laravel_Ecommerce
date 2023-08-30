@@ -35,7 +35,7 @@
                             <h3>or create </h3>
                             <h2>Billing Address</h2>
                             <div class="row">
-                                <form class="row" action="{{ route('costumer_address.store') }}" method="POST">
+                                <form class="row" action="{{ route('customer_address.store') }}" method="POST">
                                     @csrf
                                     <div class="col-md-6">
                                         <label> address_title</label>
@@ -55,8 +55,8 @@
                                         <label>Last Name"</label>
                                         <input class="form-control" name="last_name" type="text"
                                                placeholder="Last Name">
-                                        <input type="hidden" name="costomer_id"
-                                               value="{{ auth('costumer')->user()->id }}">
+                                        <input type="hidden" name="customer_id"
+                                               value="{{ auth('customer')->user()->id }}">
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
@@ -223,7 +223,7 @@
                                     </div>
                                     <div class="payment-content" id="payment-2-show">
                                         <p>
-                                            <a class="btn" href="{{ route('stripe.index') }}">Pay New</a>
+                                            <a class="btn" href="{{ route('stripe.index') }}">New Pay</a>
                                         </p>
                                     </div>
                                 </div>

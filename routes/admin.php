@@ -17,14 +17,12 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 */
 
 
-Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
-    Route::group(['prefix' => 'admin','middleware' => ['auth', 'verified']], function () {
-
-       Route::resource('/',DashboardController::class)->name('index','dashboard');
-       Route::resource('/customer',CustomerController::class);
-
-    });
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function(){
+    Route::resource('/customer',CustomerController::class);
 });
-
 
 

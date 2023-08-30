@@ -16,6 +16,14 @@ class HomeController extends Controller
     }
 
     /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Foundation\Application
+     */
+    public function selection()
+    {
+        return view('auth.selection');
+    }
+
+    /**
      * Show the form for creating a new resource.
      */
     public function create()

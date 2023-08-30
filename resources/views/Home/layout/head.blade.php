@@ -28,14 +28,14 @@
                     <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
                     <a href="product-list.html" class="nav-item nav-link">Products</a>
                     <a href="product-detail.html" class="nav-item nav-link">Product Detail</a>
-                    {{-- <a href="{{ route('cart.index') }}" class="nav-item nav-link">Cart</a> --}}
+{{--                     <a href="{{ route('cart.index') }}" class="nav-item nav-link">Cart</a>--}}
                     <a href="checkout.html" class="nav-item nav-link">Checkout</a>
                     <a href="my-account.html" class="nav-item nav-link">My Account</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">More Pages</a>
                         <div class="dropdown-menu">
                             <a href="wishlist.html" class="dropdown-item">Wishlist</a>
-{{--                            <a href="{{ route('selection') }}" class="dropdown-item">Login & Register</a>--}}
+                            <a href="{{ route('selection') }}" class="dropdown-item">Login & Register</a>
                             <a href="contact.html" class="dropdown-item">Contact Us</a>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                                 @if (Route::has('login'))
                                     <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                                         @auth
-                                            <a href="{{ url('/dashboard') }}"
+                                            <a href="{{ url('/Dashboard') }}"
                                                class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
                                         @else
                                             <a href="{{ route('selection') }}"
@@ -95,17 +95,17 @@
                         <i class="fa fa-heart"></i>
                         <span>(0)</span>
                     </a>
-{{--                    @auth('costomer')--}}
-{{--                        @if(auth('costomer')->user())--}}
+                    @auth('customer')
+                        @if(auth('customer')->user())
 {{--                            <a href="{{ route('showcart.index') }}" class="btn cart">--}}
                                 <i class="fa fa-shopping-cart"></i>
-{{--                                <span>{{ auth('costomer')->user()->unreadNotifications->count() }}</span>--}}
+{{--                                <span>{{ auth('customer')->user()->unreadNotifications->count() }}</span>--}}
 
-{{--                                @else--}}
+                                @else
                                     <span>(0)</span>
-{{--                                @endif--}}
+                                @endif
                             </a>
-{{--                        @endauth--}}
+                        @endauth
                 </div>
             </div>
         </div>
