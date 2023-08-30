@@ -1,6 +1,7 @@
 <?php
 
 use Ecommerce\Admin\DashboardController;
+use Ecommerce\Customer\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -20,6 +21,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::group(['prefix' => 'admin','middleware' => ['auth', 'verified']], function () {
 
        Route::resource('/',DashboardController::class)->name('index','dashboard');
+       Route::resource('/customer',CustomerController::class);
 
     });
 });

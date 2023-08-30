@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\AuthController;
-use Illuminate\Http\Request;
+use Ecommerce\Base\Api\Controllers\Auth\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
