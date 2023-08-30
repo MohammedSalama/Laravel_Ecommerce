@@ -53,7 +53,7 @@
                                         <td>
                                             <div class="img">
                                                 <a href="#"><img
-                                                        src="{{URL::asset('attachments/upload_attachments/'.$order->products->image)}}"
+                                                        src="{{ asset('attachments/upload_attachments/'.$order->products->image)}}"
                                                         alt="Image"></a>
                                                 <p>{{ $order->products->name }}</p>
                                             </div>
@@ -120,7 +120,7 @@
                                     </div>
                                     <div class="cart-btn">
                                         <button>Update Cart</button>
-                                        <a class="btn" href="{{ route('costomer_address.index') }}"> Checkout</a>
+                                        <a class="btn" href="{{ route('customer_address.index') }}"> Checkout</a>
 
                                     </div>
 
