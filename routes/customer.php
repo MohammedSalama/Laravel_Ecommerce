@@ -16,7 +16,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 */
 
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
-    Route::group(['prefix' => 'dashboard'], function () {
+    Route::group(['prefix' => 'customer'], function () {
     Route::resource('/',HomeController::class)->name('index','home');
     });
 });

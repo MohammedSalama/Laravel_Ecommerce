@@ -5,7 +5,7 @@
     <div class="text-left navbar-brand-wrapper">
         {{--        <a class="navbar-brand brand-logo" href="{{ route('dashboard') }}"><img src="{{ URL::asset('assets/images/ECommerce.png') }}" alt=""> </a>--}}
         <a class="navbar-brand brand-logo-mini" href="index.html"><img
-                src="{{URL::asset('assets/images/logo-icon-dark.png')}}"
+                src="{{ asset('assets/images/logo-icon-dark.png')}}"
                 alt=""></a>
     </div>
     <!-- Top bar left -->
@@ -32,10 +32,10 @@
                     aria-haspopup="true" aria-expanded="false">
                 @if (App::getLocale() == 'ar')
                     {{ LaravelLocalization::getCurrentLocaleName() }}
-                    <img src="{{ URL::asset('assets/images/flags/EG.png') }}" alt="">
+                    <img src="{{ asset('assets/images/flags/EG.png') }}" alt="">
                 @else
                     {{ LaravelLocalization::getCurrentLocaleName() }}
-                    <img src="{{ URL::asset('assets/images/flags/US.png') }}" alt="">
+                    <img src="{{ asset('assets/images/flags/US.png') }}" alt="">
                 @endif
             </button>
             <div class="dropdown-menu">
@@ -109,14 +109,14 @@
         <li class="nav-item dropdown mr-30">
             <a class="nav-link nav-pill user-avatar" data-toggle="dropdown" href="#" role="button"
                aria-haspopup="true" aria-expanded="false">
-                <img src="{{URL::asset('assets/images/profile-avatar.jpg')}}" alt="avatar">
+                <img src="{{ asset('assets/images/profile-avatar.jpg')}}" alt="avatar">
             </a>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-header">
                     <div class="media">
                         <div class="media-body">
-                            {{--                            <h5 class="mt-0 mb-0">{{ Auth::user()->name }}</h5>--}}
-                            {{--                            <span>{{ Auth::user()->email }}</span>--}}
+                            <h5 class="mt-0 mb-0">{{ Auth::user()->name }}</h5>
+                            <span>{{ Auth::user()->email }}</span>
                         </div>
                     </div>
                 </div>
