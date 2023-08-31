@@ -1,6 +1,7 @@
 <?php
 
 use Ecommerce\Admin\DashboardController;
+use Ecommerce\Category\Controllers\CategoryController;
 use Ecommerce\Customer\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -23,6 +24,7 @@ Route::group(
         'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
     ], function(){
     Route::resource('/customer',CustomerController::class);
+    Route::resource('/category',CategoryController::class);
 });
 
 
