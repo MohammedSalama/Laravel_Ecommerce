@@ -3,6 +3,8 @@
 namespace Ecommerce\Home;
 
 use App\Http\Controllers\Controller;
+use Ecommerce\Category\Models\Category;
+use Ecommerce\Customer\Models\Customer;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,7 +14,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('Home.index');
+//        return view('Home.index');
+        return view('Home.index',[
+            'categories'=>Category::all(),
+            'customers'=>Customer::all(),
+        ]);
     }
 
     /**

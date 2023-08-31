@@ -17,10 +17,10 @@
 
 
                         <li class="nav-item">
-{{--                            @foreach ($categories as $category)--}}
-{{--                                <a class="nav-link" href="{{ route('category.show',$category->id) }}"><i--}}
-{{--                                        class="fa fa-female"></i>{{ $category->name }}</a>--}}
-{{--                            @endforeach--}}
+                            @foreach ($categories as $category)
+                                <a class="nav-link" href="{{ route('category.show',$category->id) }}"><i
+                                        class="fa fa-female"></i>{{ $category->name }}</a>
+                            @endforeach
                         </li>
 
                         <li class="nav-item">
@@ -40,17 +40,17 @@
             </div>
             <div class="col-md-6">
                 <div class="header-slider normal-slider">
-{{--                    @foreach($categories as $category)--}}
-{{--                        <div class="header-slider-item">--}}
-{{--                            <img src="{{URL::asset('attachments/upload_attachments/'.$category->image)}}"--}}
-{{--                                 alt="Slider Image" style="width:100%"/>--}}
-{{--                            <div class="header-slider-caption">--}}
-{{--                                <p>{{$category->name}}</p>--}}
-{{--                                <a class="btn" href="{{ route('category.show',$category->id) }}"><i--}}
-{{--                                        class="fa fa-shopping-cart"></i>Shop Now</a>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    @endforeach--}}
+                    @foreach($categories as $category)
+                        <div class="header-slider-item">
+                            <img src="{{URL::asset('attachments/upload_attachments/'.$category->image)}}"
+                                 alt="Slider Image" style="width:100%"/>
+                            <div class="header-slider-caption">
+                                <p>{{$category->name}}</p>
+                                <a class="btn" href="{{ route('category.show',$category->id) }}"><i
+                                        class="fa fa-shopping-cart"></i>Shop Now</a>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
 
             </div>
