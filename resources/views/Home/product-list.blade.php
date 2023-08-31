@@ -346,12 +346,12 @@
                 <div class="col-lg-4 sidebar">
                     <div class="sidebar-widget category">
                         <h2 class="title">Category</h2>
-                        @foreach ($categories as $categorie )
+                        @foreach ($categories as $category )
                             <nav class="navbar bg-light">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('categorie.show',$categorie->id) }}"><i
-                                                class="fa fa-female"></i>{{ $categorie->name }}</a>
+                                        <a class="nav-link" href="{{ route('category.show',$category->id) }}"><i
+                                                class="fa fa-female"></i>{{ $category->name }}</a>
                                     </li>
                                 </ul>
                             </nav>

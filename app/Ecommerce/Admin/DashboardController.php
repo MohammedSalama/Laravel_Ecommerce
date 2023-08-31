@@ -3,6 +3,8 @@
 namespace Ecommerce\Admin;
 
 use App\Http\Controllers\Controller;
+use Ecommerce\Category\Models\Category;
+use Ecommerce\Product\Models\Product;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -12,7 +14,12 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('Dashboard');
+        $categories=Category::count();
+        return view('dashboard',[
+            'categories'=>$categories,
+            'products'=>Product::count(),
+//            'orders'=>Order::count(),
+        ]);
     }
 
     /**

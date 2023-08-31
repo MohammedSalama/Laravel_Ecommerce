@@ -3,9 +3,9 @@
 <nav class="admin-header navbar navbar-default col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <!-- logo -->
     <div class="text-left navbar-brand-wrapper">
-{{--        <a class="navbar-brand brand-logo" href="{{ route('Dashboard') }}"><img--}}
-{{--                src="{{ URL::asset('assets/images/ECommerce.png') }}" alt=""> </a>--}}
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img
+        <a class="navbar-brand brand-logo" href="{{ route('dashboard') }}"><img
+                src="{{ URL::asset('assets/images/ECommerce.png') }}" alt=""> </a>
+        <a class="navbar-brand brand-logo-mini" href="{{ route('dashboard') }}"><img
                 src="{{ asset('assets/images/logo-icon-dark.png')}}"
                 alt=""></a>
     </div>
