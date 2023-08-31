@@ -23,7 +23,6 @@
             </div>
         </div>
 
-
         @yield('content')
 
         @include('temp.layout.footer')

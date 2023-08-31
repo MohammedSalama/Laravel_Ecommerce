@@ -39,15 +39,15 @@
             </div>
             <div class="col-md-6">
                 <div class="header-slider normal-slider">
-{{--                    @foreach($categories as $category)--}}
+                    @foreach($categories as $category)
                     <div class="header-slider-item">
                         <img src="{{URL::asset('attachments/upload_attachments/'.$category->image)}}" alt="Slider Image" style="width:100%"/>
                         <div class="header-slider-caption">
-{{--                            <p>Show This Items {{$category->name}}</p>--}}
+                            <p>Show This Items {{$category->name}}</p>
                             <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
                         </div>
                     </div>
-{{--                    @endforeach --}}
+                    @endforeach
                 </div>
 
             </div>
