@@ -17,7 +17,7 @@ class HomeController extends Controller
 //        return view('Home.index');
         return view('Home.index',[
             'categories'=>Category::all(),
-            'customers'=>Customer::all(),
+            'customers'=>Customer::all()
         ]);
     }
 
