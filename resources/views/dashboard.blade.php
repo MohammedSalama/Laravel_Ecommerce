@@ -48,7 +48,7 @@
                         </div>
                         <div class="float-right text-right">
                             <p class="card-text text-dark">categories</p>
-                            {{--                            <h4><span>Count = </span>{{ $categories }}</h4>--}}
+                            <h4><span>Count = </span>{{ $categories }}</h4>
                         </div>
                     </div>
                     <p class="text-muted pt-3 mb-0 mt-2 border-top">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="float-right text-right">
                             <p class="card-text text-dark">products</p>
-                            {{--                            <h4><span>Count = </span>{{ $products }}</h4>--}}
+                            <h4><span>Count = </span>{{ $products }}</h4>
                         </div>
                     </div>
                     <p class="text-muted pt-3 mb-0 mt-2 border-top">

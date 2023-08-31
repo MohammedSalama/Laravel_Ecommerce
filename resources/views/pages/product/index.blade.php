@@ -22,9 +22,9 @@
                         <div class="card card-statistics h-100">
                             <div class="card-body">
                                 <a href="{{route('product.create')}}" class="btn btn-success btn-sm" role="button"
-                                   aria-pressed="true">prodect + </a><br><br>
+                                   aria-pressed="true">product + </a><br><br>
                                 <button>Count Products : {{ $products->count() }}</button>
-                                <button>Totel Products : {{ $products->total() }}</button>
+                                <button>Total Products : {{ $products->total() }}</button>
                                 {{-- <span>{{ $products->links() }}</span> --}}
                                 <div class="table-responsive">
                                     <table id="datatable" class="table  table-hover table-sm table-bordered p-0"
@@ -33,11 +33,11 @@
                                         <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Categorie Name</th>
+                                            <th>Category Name</th>
                                             <th>Product Name</th>
                                             <th>description</th>
                                             <th>price</th>
-                                            <th>descount_price</th>
+                                            <th>discount_price</th>
                                             <th>Photo Product</th>
                                             <th>العمليات</th>
                                         </tr>
@@ -50,7 +50,7 @@
                                                 <td>{{$product->name}}</td>
                                                 <td>{{$product->description}}</td>
                                                 <td>{{$product->price}}</td>
-                                                <td>{{$product->descount_price}}</td>
+                                                <td>{{$product->discount_price}}</td>
                                                 <td><img style="width: 70px; " src="{{URL::asset('attachments/upload_attachments/'.$product->image)}}" alt=""></td>
                                                 <td>
 

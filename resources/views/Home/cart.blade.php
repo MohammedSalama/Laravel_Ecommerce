@@ -113,9 +113,9 @@
                                         <p>Sub Total<span>{{$order->count() * $totalAmount  }}</span></p>
                                         <p>Shipping Cost<span>{{ $order->id }}</span></p>
                                         <h2>Grand Total<span>
-                                                {{-- <p>
+                                                 <p>
                                                     <strong>Total: ${{ $total}}</strong>
-                                                </p> --}}
+                                                </p>
                                             </span></h2>
                                     </div>
                                     <div class="cart-btn">

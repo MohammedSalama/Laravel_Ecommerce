@@ -18,7 +18,7 @@
 
                         <li class="nav-item">
 
-                            {{-- <a class="nav-link" href="{{ route('categorie.show',$categorie->id) }}"><i class="fa fa-female"></i>{{ $categorie->name }}</a> --}}
+                             <a class="nav-link" href="{{ route('category.show',$category->id) }}"><i class="fa fa-female"></i>{{ $category->name }}</a>
 
                         </li>
 

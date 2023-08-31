@@ -58,8 +58,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="product" class="collapse" data-parent="#sidebarnav">
-                            {{--                            <li><a href="{{ route('product.index') }}">Products</a></li>--}}
-                            {{--                            <li><a href="{{ route('product.create') }}">Create Product</a></li>--}}
+                            <li><a href="{{ route('product.index') }}">Products</a></li>
+                            <li><a href="{{ route('product.create') }}">Create Product</a></li>
 
                         </ul>
                     </li>

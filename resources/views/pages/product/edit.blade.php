@@ -34,12 +34,12 @@
                         @method('PUt')
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="categorie_id"> Categorie   : <span
+                                <label for="categorie_id"> Category   : <span
                                         class="text-danger">*</span></label>
                                 <select class="custom-select mr-sm-2" name="categorie_id">
                                     <option selected disabled>{{ $product->categories->name }}</option>
-                                    @foreach ($categories as $categorie)
-                                        <option value="{{ $categorie->id }}">{{ $categorie->name }}</option>
+                                    @foreach ($categories as $category)
+                                        <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -47,7 +47,7 @@
                         <div class="form-row">
 
                             <div class="col">
-                                <label for="name">Name prodect</label>
+                                <label for="name">Name product</label>
                                 <input type="text" name="name" value="{{ $product->name }}" class="form-control" required>
                                 <input type="hidden" name="id" value="{{ $product->id }}">
                             </div>
@@ -66,8 +66,8 @@
                         <div class="form-row">
 
                             <div class="col">
-                                <label for="name">descount_price</label>
-                                <input type="number" name="descount_price" value="{{ $product->descount_price }}" class="form-control">
+                                <label for="name">discount_price</label>
+                                <input type="number" name="discount_price" value="{{ $product->discount_price }}" class="form-control">
                             </div>
 
                         </div>

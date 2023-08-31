@@ -5,7 +5,6 @@ namespace Ecommerce\Category\Controllers;
 use App\Http\Controllers\Controller;
 use Ecommerce\Base\Traits\AttachFilesTrait;
 use Ecommerce\Category\Models\Category;
-use Ecommerce\Category\Requests\StoreCategoryRequest;
 use Ecommerce\Product\Models\Product;
 use Illuminate\Http\Request;
 
@@ -35,7 +34,7 @@ class CategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreCategoryRequest $request)
+    public function store(Request $request)
     {
         Category::create([
             'name'=>$request->name,
@@ -74,7 +73,7 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(StoreCategoryRequest $request, Category $category)
+    public function update(Request $request, Category $category)
     {
         $categories =Category::find($request->id);
         $categories->update([
