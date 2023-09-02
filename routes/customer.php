@@ -4,6 +4,8 @@ use App\Http\Controllers\Auth\LoginController;
 use Ecommerce\Admin\DashboardController;
 use Ecommerce\Customer\Controllers\Dashboard\DashboardCustomerController;
 use Ecommerce\Home\HomeController;
+use Ecommerce\Payment\PaymentController;
+use Ecommerce\Payment\StripeController;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -17,11 +19,6 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 | be assigned to the "Dashboard" middleware group. Make something great!
 |
 */
-
-//Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
-//    Route::group(['prefix' => 'customer'], function () {
-//    });
-//});
 
 Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::group(['namespace' => 'Auth'], function () {
@@ -43,11 +40,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
 
     Route::get('/selection', [HomeController::class, 'selection'])->name('selection');
     Route::resource('/', Homecontroller::class)->name('index', 'home');
-
-
     Route::resource('/customer/dashboard', DashboardCustomerController::class)->name('index', '/customer/dashboard');
-
     Route::resource('/Dashboard', DashboardController::class)->name('index', 'dashboard')->middleware(['auth', 'verified']);
+    Route::get('/payment',[PaymentController::class,'index']);
+    Route::resource('/stripe',StripeController::class);
 
 });
 
