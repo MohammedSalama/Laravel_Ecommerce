@@ -56,28 +56,30 @@
             <a class="nav-link top-nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                aria-expanded="false">
                 <i class="ti-bell"></i>
-                {{--                <span class="badge badge-danger notification-status">{{ auth()->user()->unreadNotifications->count() }} </span>--}}
+{{--                <span--}}
+{{--                    class="badge badge-danger notification-status">{{ auth()->user()->unreadNotifications->count() }}>--}}
+{{--                </span>--}}
             </a>
-            {{--            @foreach (auth()->user()->unreadNotifications as $notification )--}}
+{{--            @foreach (auth()->user()->unreadNotifications as $notification )--}}
 
-            {{--                <div class="dropdown-menu dropdown-menu-right dropdown-big dropdown-notifications">--}}
-            {{--                    <div class="dropdown-header notifications">--}}
-            {{--                        <strong>Notifications</strong>--}}
-            {{--                        <span class="badge badge-pill badge-warning">{{ $notification->count() }}</span>--}}
-            {{--                    </div>--}}
-            {{--                    <div class="dropdown-divider"></div>--}}
-            {{--                    <a href="#" class="dropdown-item">New registered user <small--}}
-            {{--                            class="float-right text-muted time">Just now</small> </a>--}}
-            {{--                    <a href="#" class="dropdown-item">New invoice received <small--}}
-            {{--                            class="float-right text-muted time">22 mins</small> </a>--}}
-            {{--                    <a href="#" class="dropdown-item">Server error report<small--}}
-            {{--                            class="float-right text-muted time">7 hrs</small> </a>--}}
-            {{--                    <a href="#" class="dropdown-item">Database report<small class="float-right text-muted time">1--}}
-            {{--                            days</small> </a>--}}
-            {{--                    <a href="#" class="dropdown-item">Order confirmation<small class="float-right text-muted time">2--}}
-            {{--                            days</small> </a>--}}
-            {{--                </div>--}}
-            {{--            @endforeach--}}
+                <div class="dropdown-menu dropdown-menu-right dropdown-big dropdown-notifications">
+                    <div class="dropdown-header notifications">
+                        <strong>Notifications</strong>
+{{--                        <span class="badge badge-pill badge-warning">{{ $notification->count() }}</span>--}}
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">New registered user <small
+                            class="float-right text-muted time">Just now</small> </a>
+                    <a href="#" class="dropdown-item">New invoice received <small
+                            class="float-right text-muted time">22 mins</small> </a>
+                    <a href="#" class="dropdown-item">Server error report<small
+                            class="float-right text-muted time">7 hrs</small> </a>
+                    <a href="#" class="dropdown-item">Database report<small class="float-right text-muted time">1
+                            days</small> </a>
+                    <a href="#" class="dropdown-item">Order confirmation<small class="float-right text-muted time">2
+                            days</small> </a>
+                </div>
+{{--            @endforeach--}}
         </li>
 
         <li class="nav-item dropdown ">
@@ -130,13 +132,13 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href=""><i class="text-info ti-settings"></i>Settings</a>
                 <a class="dropdown-item" href="#"><i class="text-danger ti-unlock"></i>
-                    {{--                 <form action="{{ route('logout') }}" method="POST">--}}
-                    {{--                @csrf--}}
-                    {{--                    <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();--}}
-                    {{--                    this.closest('form').submit();">--}}
-                    {{--                            {{ __('Log Out') }}--}}
-                    {{--                    </x-dropdown-link>--}}
-                    {{--                </form>--}}
+                    {{--                     <form action="{{ route('logout') }}" method="POST">--}}
+                    {{--                    @csrf--}}
+                    {{--                        <x-dropdown-link :href="route('logout')" onclick="event.preventDefault();--}}
+                    {{--                        this.closest('form').submit();">--}}
+                    {{--                                {{ __('Log Out') }}--}}
+                    {{--                        </x-dropdown-link>--}}
+                    {{--                    </form>--}}
 
                     @if(auth('customer')->check())
                         <form method="GET" action="{{ route('logout','customer') }}">
@@ -149,8 +151,10 @@
                                                                 this.closest('form').submit();">
                                         {{ __('Log Out') }}
                                     </x-dropdown-link>
-                                </form>
 
+                                </form>
+                        </form>
+                </a>
             </div>
         </li>
     </ul>

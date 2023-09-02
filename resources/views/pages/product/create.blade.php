@@ -33,7 +33,7 @@
                         @csrf
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="category_id"> Category   : <span
+                                <label for="category_id"> Category : <span
                                         class="text-danger">*</span></label>
                                 <select class="custom-select mr-sm-2" name="category_id">
                                     <option selected disabled>اختر اسم Category ...</option>
@@ -74,7 +74,8 @@
 
                             <div class="col">
                                 <label for="name">description</label>
-                                <textarea name="description" id="" cols="30" rows="10" class="form-control summernote"></textarea>
+                                <textarea name="description" id="" cols="30" rows="10"
+                                          class="form-control summernote"></textarea>
                             </div>
 
                         </div>
@@ -90,7 +91,8 @@
                         </div>
 
                         <button class="btn btn-success btn-sm nextBtn btn-lg pull-right"
-                                type="submit">Next</button>
+                                type="submit">Next
+                        </button>
                     </form>
 
                 </div>

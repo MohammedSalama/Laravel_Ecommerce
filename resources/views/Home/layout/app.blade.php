@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('temp.layout.headcss')
+    @include('Home.layout.head-css')
 </head>
 <body>
-@include('temp.layout.head')
+@include('Home.layout.head')
 {{-- @include('temp.layout.sidbarproduct') --}}
 <div class="content-wrapper">
 
@@ -25,7 +25,7 @@
 
         @yield('content')
 
-        @include('temp.layout.footer')
+        @include('Home.layout.footer')
     </div><!-- main content wrapper end-->
 </div>
 </body>

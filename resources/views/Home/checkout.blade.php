@@ -1,4 +1,4 @@
-@extends('temp.home')
+@extends('Home.home')
 @section('css')
 
     @section('title')
@@ -186,7 +186,7 @@
                         <div class="checkout-summary">
                             <h1>Cart Total</h1>
                             @php
-                                $count= App\Models\Order::count();
+                                $count= \Ecommerce\Cart\Models\Order::count();
                                 $totel=0
                             @endphp
                             @foreach ($orders as $order )

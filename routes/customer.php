@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use Ecommerce\Admin\DashboardController;
 use Ecommerce\Customer\Controllers\Dashboard\DashboardCustomerController;
 use Ecommerce\Home\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -22,8 +23,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 //    });
 //});
 
-Route::group(['prefix' => LaravelLocalization::setLocale()], function()
-{
+Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
     Route::group(['namespace' => 'Auth'], function () {
         // Defining routes within the 'Auth' namespace group
 
@@ -41,11 +41,13 @@ Route::group(['prefix' => LaravelLocalization::setLocale()], function()
             ->name('logout'); // Assigning the name 'logout' to this route
     });
 
-    Route::get('/selection',[HomeController::class,'selection'])->name('selection');
+    Route::get('/selection', [HomeController::class, 'selection'])->name('selection');
+    Route::resource('/', Homecontroller::class)->name('index', 'home');
 
-    Route::resource('/customer/dashboard',DashboardCustomerController::class)->name('index','/customer/dashboard');
 
-    Route::resource('/Dashboard',HomeController::class)->name('index','home');
+    Route::resource('/customer/dashboard', DashboardCustomerController::class)->name('index', '/customer/dashboard');
+
+    Route::resource('/Dashboard', DashboardController::class)->name('index', 'dashboard')->middleware(['auth', 'verified']);
 
 });
 
