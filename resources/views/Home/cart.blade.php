@@ -1,4 +1,4 @@
-@extends('temp.home')
+@extends('Home.home')
 @section('css')
 
     @section('title')

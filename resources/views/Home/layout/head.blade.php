@@ -7,7 +7,7 @@
             </div>
             <div class="col-sm-6">
                 <i class="fa fa-phone-alt"></i>
-                +012-345-6789
+                +0111-1157-0436
             </div>
         </div>
     </div>
@@ -78,7 +78,7 @@
         <div class="row align-items-center">
             <div class="col-md-3">
                 <div class="logo">
-                    {{-- <a href="{{ route('home') }}"> --}}
+                     <a href="{{ route('home') }}">
                     <img src="{{ asset('temp/img/logo.png') }}" alt="Logo">
                     </a>
                 </div>
@@ -99,7 +99,7 @@
                         @if(auth('customer')->user())
 {{--                            <a href="{{ route('showcart.index') }}" class="btn cart">--}}
                                 <i class="fa fa-shopping-cart"></i>
-{{--                                <span>{{ auth('customer')->user()->unreadNotifications->count() }}</span>--}}
+                                <span>{{ auth('customer')->user()->unreadNotifications->count() }}</span>
 
                                 @else
                                     <span>(0)</span>

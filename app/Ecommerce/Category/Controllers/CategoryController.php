@@ -55,7 +55,7 @@ class CategoryController extends Controller
 
             'products'=>$products,
             'categories'=>Category::all(),
-//            'showProduct'=>Product::all(),
+            'showProduct'=>Product::all(),
         ]);
     }
 

@@ -14,8 +14,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="dashboard" class="collapse" data-parent="#sidebarnav">
-                            <li><a href="index.html">Admin Dashboard</a></li>
-                            <li><a href="index-02.html">Home</a></li>
+                            <li><a href="{{ route('dashboard') }}">Admin Dashboard</a></li>
+                            <li><a href="{{ route('home') }}">Home</a></li>
                         </ul>
                     </li>
                     <!--facultie -->
@@ -73,8 +73,8 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="order" class="collapse" data-parent="#sidebarnav">
-                            {{--                            <li><a href="{{ route('orders.index') }}">orders</a></li>--}}
-                            {{--                            <li><a href="{{ route('orders.create') }}">Create orders</a></li>--}}
+                            <li><a href="{{ route('orders.index') }}">orders</a></li>
+                            <li><a href="{{ route('orders.create') }}">Create orders</a></li>
 
                         </ul>
                     </li>

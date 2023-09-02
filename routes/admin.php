@@ -1,6 +1,7 @@
 <?php
 
 use Ecommerce\Admin\DashboardController;
+use Ecommerce\Cart\Controllers\OrderController;
 use Ecommerce\Category\Controllers\CategoryController;
 use Ecommerce\Customer\Controllers\CustomerController;
 use Ecommerce\Product\Controllers\ProductController;
@@ -22,12 +23,12 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 Route::group(
     [
         'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-    ], function(){
-    Route::resource('/customer',CustomerController::class);
-    Route::resource('/category',CategoryController::class);
-    Route::resource('/product',ProductController::class);
-
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']
+    ], function () {
+    Route::resource('/customer', CustomerController::class);
+    Route::resource('/category', CategoryController::class);
+    Route::resource('/product', ProductController::class);
+    Route::resource('/orders',OrderController::class);
 });
 
 

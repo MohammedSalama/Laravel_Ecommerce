@@ -22,10 +22,10 @@
                         <div class="card card-statistics h-100">
                             <div class="card-body">
                                 <a href="{{route('product.create')}}" class="btn btn-success btn-sm" role="button"
-                                   aria-pressed="true">product + </a><br><br>
+                                   aria-pressed="true">prodect + </a><br><br>
                                 <button>Count Products : {{ $products->count() }}</button>
-                                <button>Total Products : {{ $products->total() }}</button>
-                                {{-- <span>{{ $products->links() }}</span> --}}
+                                <button>Totel Products : {{ $products->total() }}</button>
+                                 <span>{{ $products->links() }}</span>
                                 <div class="table-responsive">
                                     <table id="datatable" class="table  table-hover table-sm table-bordered p-0"
                                            data-page-length="50"
@@ -51,35 +51,53 @@
                                                 <td>{{$product->description}}</td>
                                                 <td>{{$product->price}}</td>
                                                 <td>{{$product->discount_price}}</td>
-                                                <td><img style="width: 70px; " src="{{URL::asset('attachments/upload_attachments/'.$product->image)}}" alt=""></td>
+                                                <td><img style="width: 70px; "
+                                                         src="{{URL::asset('attachments/upload_attachments/'.$product->image)}}"
+                                                         alt=""></td>
                                                 <td>
 
-                                                    <a href="{{route('product.edit',$product->id)}}" class="btn btn-info btn-sm" title="Edit" role="button" aria-pressed="true"><i class="fa fa-edit"></i></a>
-                                                    <a href="{{route('product.show',$product->id)}}" class="btn btn-info btn-sm" title="Show" role="button" aria-pressed="true"><i class="fa fa-book"></i></a>
-                                                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#delete_book{{ $product->id }}" title="حذف"><i class="fa fa-trash"></i></button>
+                                                    <a href="{{route('product.edit',$product->id)}}"
+                                                       class="btn btn-info btn-sm" title="Edit" role="button"
+                                                       aria-pressed="true"><i class="fa fa-edit"></i></a>
+                                                    <a href="{{route('product.show',$product->id)}}"
+                                                       class="btn btn-info btn-sm" title="Show" role="button"
+                                                       aria-pressed="true"><i class="fa fa-book"></i></a>
+                                                    <button type="button" class="btn btn-danger btn-sm"
+                                                            data-toggle="modal"
+                                                            data-target="#delete_book{{ $product->id }}" title="حذف"><i
+                                                            class="fa fa-trash"></i></button>
                                                 </td>
                                             </tr>
 
                                             {{-- @include('pages.library.destroy') --}}
-                                            <div class="modal fade" id="delete_book{{$product->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal fade" id="delete_book{{$product->id}}" tabindex="-1"
+                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
-                                                            <h5 style="font-family: 'Cairo', sans-serif;" class="modal-title" id="exampleModalLabel">حذف {{$product->name}}</h5>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <h5 style="font-family: 'Cairo', sans-serif;"
+                                                                class="modal-title" id="exampleModalLabel">
+                                                                حذف {{$product->name}}</h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
                                                             </button>
                                                         </div>
                                                         <div class="modal-body">
-                                                            <form action="{{route('product.destroy',$product->id)}}" method="post">
+                                                            <form action="{{route('product.destroy',$product->id)}}"
+                                                                  method="post">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <input type="hidden" name="id" value="{{$product->id}}">
-                                                                <input type="hidden" name="file_name" value="{{$product->image}}">
-                                                                <h5 style="font-family: 'Cairo', sans-serif;">هل انت متاكد مع عملية الحذف ؟</h5>
+                                                                <input type="hidden" name="file_name"
+                                                                       value="{{$product->image}}">
+                                                                <h5 style="font-family: 'Cairo', sans-serif;">هل انت
+                                                                    متاكد مع عملية الحذف ؟</h5>
                                                                 <div class="modal-footer">
-                                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                                    <button  class="btn btn-danger">Submit</button>
+                                                                    <button type="button" class="btn btn-secondary"
+                                                                            data-dismiss="modal">Close
+                                                                    </button>
+                                                                    <button class="btn btn-danger">Submit</button>
                                                                 </div>
                                                             </form>
                                                         </div>
